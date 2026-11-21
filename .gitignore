@@ -12,3 +12,10 @@ client/build/ios/xcode/overlay.json
 client/build/ios/xcode/gen/
 client/build/android/overlay.json
 client/build/android/gen/
+
+
+# Root env vars
+.env
+
+# server module
+server/tmp
