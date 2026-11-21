@@ -1,0 +1,14 @@
+# client files and folders
+client/.task
+client/bin
+client/frontend/dist
+client/frontend/node_modules
+client/build/linux/appimage/build
+client/build/windows/nsis/MicrosoftEdgeWebview2Setup.exe
+
+
+# Mobile generated (per-machine; overlays hold absolute paths)
+client/build/ios/xcode/overlay.json
+client/build/ios/xcode/gen/
+client/build/android/overlay.json
+client/build/android/gen/
