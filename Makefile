@@ -31,10 +31,14 @@ server/compose-psql:
 # Goose migrations related
 server/migrate-create:
 	$(if $(name),,$(error usage: make server/migrate-create name=create_users_table))
-	goose create $(name) sql
+	goose create -s $(name) sql
 
 server/migrate-up:
 	goose up
 
 server/migrate-down:
 	goose down
+
+debug-env:
+	@echo user=[$(POSTGRES_USER)] pass=[$(POSTGRES_PASSWORD)]
+	@echo dsn=[$(GOOSE_DBSTRING)]
